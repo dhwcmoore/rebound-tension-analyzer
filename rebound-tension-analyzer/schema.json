@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rebound Assessment Input Schema",
+  "type": "object",
+  "properties": {
+    "Sector": { "type": "string" },
+    "BaseConsumption": { "type": "number", "minimum": 0 },
+    "EfficiencyGain": { "type": "number", "minimum": 0, "maximum": 1 },
+    "DirectElasticity": { "type": "number", "minimum": 0 },
+    "IndirectElasticity": { "type": "number", "minimum": 0 },
+    "FrontierExpansionRate": { "type": "number", "minimum": 0 },
+    "PriceShift": { "type": "number", "minimum": 0 },
+    "LifecycleFactor": { "type": "number", "minimum": 0 },
+    "PolicyScope": {
+      "type": "string",
+      "enum": ["regional", "national", "global"]
+    }
+  },
+  "required": [
+    "Sector",
+    "BaseConsumption",
+    "EfficiencyGain",
+    "DirectElasticity",
+    "IndirectElasticity",
+    "FrontierExpansionRate",
+    "PriceShift",
+    "LifecycleFactor",
+    "PolicyScope"
+  ]
+}
