@@ -1,0 +1,11 @@
+{
+  "Sector": "Freight Transport",
+  "BaseConsumption": 1000,
+  "EfficiencyGain": 0.15,
+  "DirectElasticity": 0.6,
+  "IndirectElasticity": 0.3,
+  "FrontierExpansionRate": 0.05,
+  "PriceShift": 0.12,
+  "LifecycleFactor": 1.2,
+  "PolicyScope": "national"
+}
